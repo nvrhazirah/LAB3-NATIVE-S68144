@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         if (getSupportFragmentManager().findFragmentById(R.id.fragment2) == null) {
             Fragment2 fragment2 = new Fragment2();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.fragment2, fragment2);  // Assuming you have a container for Fragment2
+            transaction.replace(R.id.fragment2, fragment2);  
             transaction.commit();
         }
     }
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // Ensure that Fragment2 is already loaded
         Fragment2 fragment2 = (Fragment2) getSupportFragmentManager().findFragmentById(R.id.fragment2);
         if (fragment2 != null) {
-            fragment2.updateData(data);  // Update Fragment2 with new data
+            fragment2.updateData(data);  // Update Fragment2 with new data   
         }
     }
 }
